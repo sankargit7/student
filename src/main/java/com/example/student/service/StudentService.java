@@ -36,6 +36,11 @@ public class StudentService {
         existingStudent.setMarks(student.getMarks());
         return repository.save(existingStudent);
     }
+    
+    public Student getByName(String name) {
+    	return repository.findByName(name);
+    	
+    }
 
 
 }
