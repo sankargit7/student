@@ -42,12 +42,7 @@ public class StudentService {
     	return repository.findByName(name);
     	
     }
-    public List<Student> findByMarks(int marks) throws Exception {
-        if(repository.findByMarks(marks).isEmpty()){
-            throw new Exception("marks not found");
-        }
-        else {
-            return repository.findByMarks(marks);
-        }
+    public List<Student> findByMarks(int marks)  {
+       return repository.findByMarks(marks);
     }
 }
