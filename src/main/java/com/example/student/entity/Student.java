@@ -41,6 +41,8 @@ public class Student {
 	public Integer getMarks() {
 		return marks;
 	}
+
+
 	public void setMarks(Integer marks) {
 		this.marks = marks;
 	}

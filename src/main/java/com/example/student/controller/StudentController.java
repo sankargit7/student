@@ -43,5 +43,10 @@ public class StudentController {
     public Student updateStudent(@RequestBody Student student){
         return service.updateStudent(student);
     }
+    @GetMapping("students/{marks}")
+    public List<Student> getByMarks(@PathVariable int marks) throws Exception {
+
+        return service.findByMarks(marks);
+    }
 
 }
